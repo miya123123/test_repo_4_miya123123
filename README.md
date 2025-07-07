@@ -113,7 +113,7 @@ src/
 
 ## 🎉 デモ
 
-[ゲームをプレイする](https://your-username.github.io/flappy-bird-game/)
+[ゲームをプレイする](https://miya123123.github.io/test_repo_4_miya123123/)
 
 ---
 
