@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .game-container {
+    @apply relative w-full h-screen overflow-hidden bg-gradient-to-b from-cyan-400 via-blue-500 to-blue-600;
+  }
+  
+  .bird {
+    @apply absolute w-8 h-8 transition-all duration-100 ease-out;
+    transition-property: transform;
+  }
+  
+  .pipe {
+    @apply absolute bg-gradient-to-b from-green-400 to-green-600 shadow-lg;
+    box-shadow: inset 0 0 0 3px rgba(34, 197, 94, 0.3);
+  }
+  
+  .cloud {
+    @apply absolute bg-white rounded-full opacity-80;
+    animation: float 6s ease-in-out infinite;
+  }
+}
